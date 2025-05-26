@@ -25,7 +25,7 @@
 
           <!--logo-->
           <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6">
-            <a href="index.html"><img class="img-responsive" src="assets/img/logo.png"></a>
+            <a href="index.html"><img class="img-responsive" style="width: 60px" src="assets/img/微信图片_20250526221817.png"></a>
           </div>
 
           <!--侧边菜单-->
@@ -55,11 +55,11 @@
               <div style="display: flex">
                 <div style="display: grid">
                   <h4>样例</h4>
-                  <a>Metal Layer 1</a>
-                  <a>Metal Layer 2</a>
-                  <a>Metal Layer 3</a>
-                  <a>Via 1</a>
-                  <a>Via 2</a>
+                  <a onclick="FEChangeImg(0)">Metal Layer 1</a>
+                  <a onclick="FEChangeImg(1)">Metal Layer 2</a>
+                  <a onclick="FEChangeImg(2)">Metal Layer 3</a>
+                  <a onclick="FEChangeImg(3)">Via 1</a>
+                  <a onclick="FEChangeImg(4)">Via 2</a>
                 </div>
                 <div style="display: grid; margin-left: 10px">
                   <h4>上传版图</h4>
@@ -71,15 +71,15 @@
               <div class="helmet text-left" style="margin-left: 100px;display: grid">
                 <h4>当前版图图像</h4>
                 <div style="display: flex; justify-content: space-around; align-items: center"> <!-- 修改 1：width: 100% -->
-                  <img src="assets/img/图片2.png" style="width: 150px">
+                  <img id="FEImg1" src="assets/img/样例图/SVD/Metal Layer 1/Metal1.png" style="width: 150px">
                   <div style="display: grid; margin-left: 20px">
                     <h4>版图图像信息</h4>
-                    <p>规格：1200*1200</p>
-                    <p>来源：ICCAD2019 Metal Layer数据集</p>
-                    <p>非零奇异值数量：5</p>
-                    <p>无损压缩率：99.17%</p>
+                    <p id="FEText1">规格：1200*1200</p>
+                    <p id="FEText2">来源：ICCAD2019 Metal Layer数据集</p>
+                    <p id="FEText3">非零奇异值数量：5</p>
+                    <p id="FEText4">无损压缩率：99.17%</p>
                   </div>
-                  <img src="assets/img/图片3.png"
+                  <img id="FEImg2" src="assets/img/样例图/SVD/Metal Layer 1/imageonline-co-gifimage.gif"
                        style="width: 150px;margin-left: 150px"> <!-- 修改 2：添加 margin-left: auto -->
                 </div>
               </div>
@@ -92,33 +92,32 @@
             </div>
             <div style="display: flex;justify-content: space-between">
               <div style="display: grid" class="text-center">
-                <p>k=1</p>
-                <img src="assets/img/图片4.png" style="width: 150px">
-                <h4>压缩率: 99.83%</h4>
+                <p id="FEText5">k=1</p>
+                <img id="FEImg3" src="assets/img/样例图/SVD/Metal Layer 1/compressed-testImage/Metal1-k=1.png" style="width: 150px">
+                <h4 id="FEText6">压缩率:99.83%</h4>
               </div>
               <div style="display: grid" class="text-center">
-                <p>k=2</p>
-                <img src="assets/img/图片5.png" style="width: 150px">
-                <h4>99.67%</h4>
+                <p id="FEText7">k=2</p>
+                <img id="FEImg4" src="assets/img/样例图/SVD/Metal Layer 1/compressed-testImage/Metal1-k=2.png" style="width: 150px">
+                <h4 id="FEText8">99.67%</h4>
               </div>
               <div style="display: grid" class="text-center">
-                <p>k=3</p>
-                <img src="assets/img/图片6.png" style="width: 150px">
-                <h4>99.45%</h4>
+                <p id="FEText9">k=3</p>
+                <img id="FEImg5" src="assets/img/样例图/SVD/Metal Layer 1/compressed-testImage/Metal1-k=3.png" style="width: 150px">
+                <h4 id="FEText10">99.50%</h4>
               </div>
               <div style="display: grid" class="text-center">
-                <p>k=4</p>
-                <img src="assets/img/图片7.png" style="width: 150px">
-                <h4>99.33%</h4>
+                <p id="FEText11">k=4</p>
+                <img id="FEImg6" src="assets/img/样例图/SVD/Metal Layer 1/compressed-testImage/Metal1-k=4.png" style="width: 150px">
+                <h4 id="FEText12">99.33%</h4>
               </div>
               <div style="display: grid" class="text-center">
-                <p>k=5</p>
-                <img src="assets/img/图片8.png" style="width: 150px">
-                <h4>99.17%(无损)</h4>
+                <p id="FEText13">k=5</p>
+                <img id="FEImg7" src="assets/img/样例图/SVD/Metal Layer 1/compressed-testImage/Metal1-k=5.png" style="width: 150px">
+                <h4 id="FEText14">99.17%(无损)</h4>
               </div>
             </div>
           </div>
-
           </div>
         </div>
       </div>
