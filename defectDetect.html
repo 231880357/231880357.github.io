@@ -54,11 +54,11 @@
                         <div style="display: flex">
                             <div style="display: grid">
                                 <h4>样例</h4>
-                                <a>Metal Layer 1</a>
-                                <a>Metal Layer 2</a>
-                                <a>Metal Layer 3</a>
-                                <a>Via 1</a>
-                                <a>Via 2</a>
+                                <a onclick="DDChangeImg1(0)">Metal Layer 1</a>
+                                <a onclick="DDChangeImg1(1)">Metal Layer 2</a>
+                                <a onclick="DDChangeImg1(2)">Metal Layer 3</a>
+                                <a onclick="DDChangeImg1(3)">Via 1</a>
+                                <a onclick="DDChangeImg1(4)">Via 2</a>
                             </div>
                             <div style="display: grid; margin-left: 10px">
                                 <h4>上传版图</h4>
@@ -70,11 +70,11 @@
                         <div class="helmet text-left" style="margin-left: 30px;display: grid">
                             <h4>当前版图图像</h4>
                             <div style="display: flex; justify-content: space-around; align-items: center"> <!-- 修改 1：width: 100% -->
-                                <img src="assets/img/图片12.png" style="width: 150px">
+                                <img id="DDImg1" src="assets/img/样例图/图神经网络/Metal Layer 1/12-nhotstrain_nhsNHSCAD35015.png" style="width: 150px">
                                 <div style="display: grid; margin-left: 20px">
                                     <h4>版图图像信息</h4>
-                                    <p>规格：1200*1200</p>
-                                    <p>来源：ICCAD2019 Metal Layer数据集</p>
+                                    <p id="DDText1">规格：1200*1200</p>
+                                    <p id="DDText2">来源：ICCAD2012 Metal Layer数据集</p>
                                 </div>
                             </div>
                         </div>
@@ -82,10 +82,10 @@
                     <div class="helmet text-left" style="margin-left: 30px;display: grid">
                         <h4 style="">图表征版图</h4>
                         <div style="display: flex" class="text-center">
-                            <img src="assets/img/图片13.png" style="width: 150px">
+                            <img id="DDImg2" src="assets/img/样例图/图神经网络/Metal Layer 1/12-nhotstrain_nhsNHSCAD35015_graph.png" style="width: 150px">
                             <div style="display: grid;margin-left: 20px" class="text-center">
                                 <h4></h4>
-                                <h4>缺陷检测结果：无缺陷</h4>
+                                <h4 id="DDText3">缺陷检测结果：无缺陷</h4>
                                 <h4></h4>
                             </div>
                         </div>
@@ -103,11 +103,9 @@
                         <div style="display: flex">
                             <div style="display: grid">
                                 <h4>样例</h4>
-                                <a>Metal Layer 1</a>
-                                <a>Metal Layer 2</a>
-                                <a>Metal Layer 3</a>
-                                <a>Via 1</a>
-                                <a>Via 2</a>
+                                <a>Large Layout 1</a>
+                                <a>Large Layout 2</a>
+                                <a>Large Layout 3</a>
                             </div>
                             <div style="display: grid; margin-left: 10px">
                                 <h4>上传版图</h4>
@@ -119,11 +117,10 @@
                         <div class="helmet text-left" style="margin-left: 30px;display: grid">
                             <h4>当前版图图像</h4>
                             <div style="display: flex; justify-content: space-around; align-items: center"> <!-- 修改 1：width: 100% -->
-                                <img src="assets/img/图片12.png" style="width: 150px">
+                                <img id="DDImg3" src="assets/img/样例图/先验光刻下版图缺陷定位/Layout 1.png" style="width: 150px">
                                 <div style="display: grid; margin-left: 20px">
                                     <h4>版图图像信息</h4>
-                                    <p>规格：1200*1200</p>
-                                    <p>来源：ICCAD2019 Metal Layer数据集</p>
+                                    <p id="DDText4">来源：ICCAD2019 Metal Layer数据集</p>
                                 </div>
                             </div>
                         </div>
@@ -133,13 +130,13 @@
                             <div style="display: grid">
                                 <h4>光刻仿真结果</h4>
                                 <div style="display: flex" class="text-center">
-                                    <img src="assets/img/图片14.png" style="width: 150px">
+                                    <img id="DDImg4" src="assets/img/样例图/先验光刻下版图缺陷定位/LithoSim.png" style="width: 150px">
                                 </div>
                             </div>
                             <div style="display: grid; margin-left: 80px">
                                 <h4>缺陷定位结果</h4>
                                 <div style="display: flex" class="text-center">
-                                    <img src="assets/img/图片15.png" style="width: 150px">
+                                    <img id="DDImg5" src="assets/img/样例图/先验光刻下版图缺陷定位/Layout1withHots.png" style="width: 150px">
                                 </div>
                             </div>
                         </div>

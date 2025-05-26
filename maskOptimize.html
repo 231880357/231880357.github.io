@@ -49,16 +49,16 @@
         <div style="display: flex;margin-top: 5%">
           <div>
             <div class="helmet text-left" style="margin-bottom: 10px">
-              <h4 style="font-size: 26px">选择样例或上传版图图像</h4>
+              <h4 style="font-size: 26px">选择样例或上传光刻目标版图</h4>
             </div>
             <div style="display: flex">
               <div style="display: grid;font-size: 20px">
                 <h4>样例</h4>
-                <a>Metal Layer 1</a>
-                <a>Metal Layer 2</a>
-                <a>Metal Layer 3</a>
-                <a>Via 1</a>
-                <a>Via 2</a>
+                <a onclick="MOChangeImg(0)">Target Patter1</a>
+                <a onclick="MOChangeImg(1)">Target Patter2</a>
+                <a onclick="MOChangeImg(2)">Target Patter3</a>
+                <a onclick="MOChangeImg(3)">Target Patter4</a>
+                <a onclick="MOChangeImg(4)">Target Patter5</a>
               </div>
               <div style="display: grid; margin-left: 10px">
                 <h4>上传版图</h4>
@@ -70,14 +70,14 @@
             <div class="helmet text-left" style="display: grid">
               <h4 style="font-size: 26px">目标光刻图像</h4>
               <div style="display: flex; justify-content: space-around; align-items: center"> <!-- 修改 1：width: 100% -->
-                <img src="assets/img/图片16.png" style="width: 200px">
+                <img id="MOImg1" src="assets/img/图片16.png" style="width: 200px">
               </div>
             </div>
           </div>
           <div class="helmet text-left" style="margin-left: 150px;display: grid">
             <h4 style="font-size: 26px">优化掩膜输出</h4>
             <div style="display: flex" class="text-center">
-              <img src="assets/img/图片17.png" style="width: 200px">
+              <img id="MOImg2" src="assets/img/图片17.png" style="width: 200px">
             </div>
           </div>
         </div>
