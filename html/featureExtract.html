@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script type="text/javascript" src="assets/js/script.js" ></script>
+  <title>特征提取</title>
+</head>
+<body>
+  <div class="overlay" id="overlay" onclick="closeNav()"></div>
+
+  <section class="head index-part-1">
+    <div class="head-bar">
+      <div class="container">
+        <div class="row">
+
+          <!--logo-->
+          <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6">
+            <a href="index.html"><img class="img-responsive" src="assets/img/logo.png"></a>
+          </div>
+
+          <!--侧边菜单-->
+          <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6 text-right">
+            <div class="main" id="main">
+              <a href="index.html">返回 &#9776;</a>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+
+
+    <div class="wow">
+      <div class="container">
+        <div class="row">
+          <div class="wow-logo" style="justify-content: space-between; display: flex; align-items: center;padding-top: 30px">
+            <h3>基于SVD的版图特征提取与压缩</h3>
+            <a class="btn" style="color: blue;text-decoration: underline" href="dataConcentrate.html">查看数据集中的整体效果↗</a>
+          </div>
+          <div style="display: flex">
+            <div>
+              <div class="helmet text-left" style="margin-bottom: 10px">
+                <h4>选择样例或上传版图图像</h4>
+              </div>
+              <div style="display: flex">
+                <div style="display: grid">
+                  <h4>样例</h4>
+                  <a>Metal Layer 1</a>
+                  <a>Metal Layer 2</a>
+                  <a>Metal Layer 3</a>
+                  <a>Via 1</a>
+                  <a>Via 2</a>
+                </div>
+                <div style="display: grid; margin-left: 10px">
+                  <h4>上传版图</h4>
+                  <img src="assets/img/图片1.png" style="width: 100px">
+                </div>
+              </div>
+            </div>
+            <div style="margin-left: 30px">
+              <div class="helmet text-left" style="margin-left: 100px;display: grid">
+                <h4>当前版图图像</h4>
+                <div style="display: flex; justify-content: space-around; align-items: center"> <!-- 修改 1：width: 100% -->
+                  <img src="assets/img/图片2.png" style="width: 150px">
+                  <div style="display: grid; margin-left: 20px">
+                    <h4>版图图像信息</h4>
+                    <p>规格：1200*1200</p>
+                    <p>来源：ICCAD2019 Metal Layer数据集</p>
+                    <p>非零奇异值数量：5</p>
+                    <p>无损压缩率：99.17%</p>
+                  </div>
+                  <img src="assets/img/图片3.png"
+                       style="width: 150px;margin-left: 150px"> <!-- 修改 2：添加 margin-left: auto -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="helmet text-left" style="margin-top: 40px">
+              <h4>保留前k个非零奇异值</h4>
+            </div>
+            <div style="display: flex;justify-content: space-between">
+              <div style="display: grid" class="text-center">
+                <p>k=1</p>
+                <img src="assets/img/图片4.png" style="width: 150px">
+                <h4>压缩率: 99.83%</h4>
+              </div>
+              <div style="display: grid" class="text-center">
+                <p>k=2</p>
+                <img src="assets/img/图片5.png" style="width: 150px">
+                <h4>99.67%</h4>
+              </div>
+              <div style="display: grid" class="text-center">
+                <p>k=3</p>
+                <img src="assets/img/图片6.png" style="width: 150px">
+                <h4>99.45%</h4>
+              </div>
+              <div style="display: grid" class="text-center">
+                <p>k=4</p>
+                <img src="assets/img/图片7.png" style="width: 150px">
+                <h4>99.33%</h4>
+              </div>
+              <div style="display: grid" class="text-center">
+                <p>k=5</p>
+                <img src="assets/img/图片8.png" style="width: 150px">
+                <h4>99.17%(无损)</h4>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

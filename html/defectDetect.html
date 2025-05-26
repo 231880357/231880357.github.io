@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/script.js" ></script>
+    <title>缺陷检测</title>
+</head>
+<body>
+<div class="overlay" id="overlay" onclick="closeNav()"></div>
+
+<section class="head index-part-1">
+    <div class="head-bar">
+        <div class="container">
+            <div class="row">
+
+                <!--logo-->
+                <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6">
+                    <a href="index.html"><img class="img-responsive" src="assets/img/logo.png"></a>
+                </div>
+
+                <!--侧边菜单-->
+                <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6 text-right">
+                    <div class="main" id="main">
+                        <a href="index.html">返回 &#9776;</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+
+    <div class="wow">
+        <div class="container">
+            <div class="row">
+                <div class="wow-logo" style="justify-content: space-between; display: flex; align-items: center;padding-top: 30px">
+                    <h3>基于图神经网络的版图缺陷检测</h3>
+                </div>
+                <div style="display: flex">
+                    <div>
+                        <div class="helmet text-left" style="margin-bottom: 10px">
+                            <h4>选择样例或上传版图图像</h4>
+                        </div>
+                        <div style="display: flex">
+                            <div style="display: grid">
+                                <h4>样例</h4>
+                                <a>Metal Layer 1</a>
+                                <a>Metal Layer 2</a>
+                                <a>Metal Layer 3</a>
+                                <a>Via 1</a>
+                                <a>Via 2</a>
+                            </div>
+                            <div style="display: grid; margin-left: 10px">
+                                <h4>上传版图</h4>
+                                <img src="assets/img/图片1.png" style="width: 100px">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-left: 30px">
+                        <div class="helmet text-left" style="margin-left: 30px;display: grid">
+                            <h4>当前版图图像</h4>
+                            <div style="display: flex; justify-content: space-around; align-items: center"> <!-- 修改 1：width: 100% -->
+                                <img src="assets/img/图片12.png" style="width: 150px">
+                                <div style="display: grid; margin-left: 20px">
+                                    <h4>版图图像信息</h4>
+                                    <p>规格：1200*1200</p>
+                                    <p>来源：ICCAD2019 Metal Layer数据集</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="helmet text-left" style="margin-left: 30px;display: grid">
+                        <h4 style="">图表征版图</h4>
+                        <div style="display: flex" class="text-center">
+                            <img src="assets/img/图片13.png" style="width: 150px">
+                            <div style="display: grid;margin-left: 20px" class="text-center">
+                                <h4></h4>
+                                <h4>缺陷检测结果：无缺陷</h4>
+                                <h4></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wow-logo" style="justify-content: space-between; display: flex; align-items: center;padding-top: 30px">
+                    <h3>先验光刻下版图缺陷定位</h3>
+                </div>
+                <div style="display: flex">
+                    <div>
+                        <div class="helmet text-left" style="margin-bottom: 10px">
+                            <h4>选择样例或上传版图图像</h4>
+                        </div>
+                        <div style="display: flex">
+                            <div style="display: grid">
+                                <h4>样例</h4>
+                                <a>Metal Layer 1</a>
+                                <a>Metal Layer 2</a>
+                                <a>Metal Layer 3</a>
+                                <a>Via 1</a>
+                                <a>Via 2</a>
+                            </div>
+                            <div style="display: grid; margin-left: 10px">
+                                <h4>上传版图</h4>
+                                <img src="assets/img/图片1.png" style="width: 100px">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-left: 30px">
+                        <div class="helmet text-left" style="margin-left: 30px;display: grid">
+                            <h4>当前版图图像</h4>
+                            <div style="display: flex; justify-content: space-around; align-items: center"> <!-- 修改 1：width: 100% -->
+                                <img src="assets/img/图片12.png" style="width: 150px">
+                                <div style="display: grid; margin-left: 20px">
+                                    <h4>版图图像信息</h4>
+                                    <p>规格：1200*1200</p>
+                                    <p>来源：ICCAD2019 Metal Layer数据集</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="helmet text-left" style="margin-left: 30px;display: grid">
+                        <div style="display: flex">
+                            <div style="display: grid">
+                                <h4>光刻仿真结果</h4>
+                                <div style="display: flex" class="text-center">
+                                    <img src="assets/img/图片14.png" style="width: 150px">
+                                </div>
+                            </div>
+                            <div style="display: grid; margin-left: 80px">
+                                <h4>缺陷定位结果</h4>
+                                <div style="display: flex" class="text-center">
+                                    <img src="assets/img/图片15.png" style="width: 150px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
